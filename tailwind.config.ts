@@ -117,7 +117,7 @@ export default {
         "float": "float 3s ease-in-out infinite",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Acumin Pro", "system-ui", "sans-serif"],
       },
     },
   },
