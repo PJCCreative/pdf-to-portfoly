@@ -2,14 +2,28 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Mail, Phone, ExternalLink } from "lucide-react";
 import heroBackground from "@/assets/home-hero-blend.svg";
+import { useState, useEffect } from "react";
 
 export const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Calculate scale based on scroll position (1 to 1.2 scale)
+  const scale = 1 + (scrollY / window.innerHeight) * 0.2;
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background SVG art */}
+      {/* Background SVG art with scroll scale effect */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-        style={{ backgroundImage: `url(${heroBackground})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-100 ease-out" 
+        style={{ 
+          backgroundImage: `url(${heroBackground})`,
+          transform: `scale(${scale})`
+        }}
       />
       
       {/* Dark overlay for text readability */}
