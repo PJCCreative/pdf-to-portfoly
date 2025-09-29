@@ -20,8 +20,6 @@ export const Hero = () => {
       transform: `scale(${scale})`
     }} />
       
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/30" />
       
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-10">
