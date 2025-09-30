@@ -67,14 +67,14 @@ export const Hero = () => {
             </div>
             
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="glass-effect border-white/20 text-blue-100 hover:bg-white/20 transition-smooth" asChild>
+              <Button size="lg" variant="secondary" className="glass-effect border-white/20 text-muted-foreground hover:bg-white/20 transition-smooth" asChild>
                 <a href="http://www.pjccreative.com" target="_blank" rel="noopener noreferrer">
                   View Portfolio
                   <ExternalLink className="w-4 h-4 ml-2" />
                 </a>
               </Button>
               
-              <Button size="lg" variant="outline" className="border-white/30 text-blue-100 hover:bg-white/10 transition-smooth" asChild>
+              <Button size="lg" variant="outline" className="border-white/30 text-muted-foreground hover:bg-white/10 transition-smooth" asChild>
                 <a href="https://linkedin.com/in/patrick-campagnone" target="_blank" rel="noopener noreferrer">
                   LinkedIn Profile
                   <ExternalLink className="w-4 h-4 ml-2" />
