@@ -17,19 +17,19 @@ export const Education = () => {
           {/* Education Card */}
           <Card className="shadow-card hover:shadow-elegant transition-smooth card-gradient border-border/50">
             <CardHeader className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-2xl flex items-center justify-center">
-                <GraduationCap className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-2xl flex items-center justify-center">
+                <GraduationCap className="w-8 h-8 text-accent" />
               </div>
               <CardTitle className="text-2xl font-semibold text-foreground">Education</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <h3 className="text-xl font-semibold text-primary mb-2">
+              <h3 className="text-xl font-semibold text-accent mb-2">
                 Bachelor of Arts (BA)
               </h3>
               <p className="text-lg text-muted-foreground mb-3">
                 Communications Media
               </p>
-              <Badge variant="secondary" className="mb-4 bg-primary/5 text-primary border-primary/20">
+              <Badge variant="outline" className="mb-4 bg-accent/5 text-accent border-accent/30">
                 Concentration in Graphic Design
               </Badge>
               <p className="text-muted-foreground font-medium">
@@ -44,7 +44,7 @@ export const Education = () => {
               <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-2xl flex items-center justify-center">
                 <Heart className="w-8 h-8 text-accent" />
               </div>
-              <CardTitle className="text-2xl font-semibold text-foreground">Community Leadership</CardTitle>
+              <CardTitle className="text-2xl font-semibold text-foreground">Volunteering</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <h3 className="text-xl font-semibold text-accent mb-2">
@@ -59,10 +59,7 @@ export const Education = () => {
               <p className="text-muted-foreground font-medium mb-4">
                 Townsend, Massachusetts
               </p>
-              <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-                <Users className="w-4 h-4" />
-                <span>Building teamwork and creativity in young athletes</span>
-              </div>
+              
             </CardContent>
           </Card>
         </div>
