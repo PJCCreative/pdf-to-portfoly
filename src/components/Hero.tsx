@@ -42,7 +42,7 @@ export const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
               Patrick
               <span className="block bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent py-[4px]">
-                Campagnone
+                Campagnone Edit in Cursor
               </span>
             </h1>
             
