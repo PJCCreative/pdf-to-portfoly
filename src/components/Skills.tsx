@@ -54,7 +54,7 @@ export const Skills = () => {
             <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-2xl flex items-center justify-center">
               <Code className="w-8 h-8 text-accent" />
             </div>
-            <CardTitle className="text-2xl font-semibold">Design Tools & Technologies</CardTitle>
+            <CardTitle className="font-semibold text-3xl">Design Tools & Technologies</CardTitle>
             <p className="text-muted-foreground">Professional expertise across industry-standard software and emerging AI tools</p>
           </CardHeader>
           <CardContent>
