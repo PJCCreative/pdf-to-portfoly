@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { MapPin, Mail, Phone, ExternalLink } from "lucide-react";
 import heroBackground from "@/assets/home-hero-blend.svg";
 import { useState, useEffect, useRef } from "react";
@@ -46,9 +45,6 @@ export const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
           <div className="animate-fade-in">
-            <Badge variant="secondary" className="mb-6 glass-effect border-white/20 text-muted-foreground">
-              Senior Art Director
-            </Badge>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
               Patrick

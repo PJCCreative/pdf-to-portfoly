@@ -39,7 +39,7 @@ export const Skills = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 justify-center">
-                    {category.skills.map(skill => <Badge key={skill} variant="outline" className="text-sm py-2 px-4 bg-accent/5 text-accent border-accent/30 hover:bg-accent/10 transition-smooth">
+                    {category.skills.map(skill => <Badge key={skill} variant="outline" className="text-sm py-2 px-4 bg-primary/5 text-primary border-primary/30 hover:bg-primary/10 transition-smooth">
                         {skill}
                       </Badge>)}
                   </div>
@@ -59,7 +59,7 @@ export const Skills = () => {
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-3 justify-center">
-              {tools.map(tool => <Badge key={tool} variant="outline" className="text-sm py-2 px-4 bg-accent/5 text-accent border-accent/30 hover:bg-accent/10 transition-smooth">
+              {tools.map(tool => <Badge key={tool} variant="outline" className="text-sm py-2 px-4 bg-primary/5 text-primary border-primary/30 hover:bg-primary/10 transition-smooth">
                   {tool}
                 </Badge>)}
             </div>
