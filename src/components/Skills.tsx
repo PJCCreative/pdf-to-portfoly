@@ -1,68 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Palette, 
-  Target, 
-  Users, 
-  Presentation,
-  Lightbulb,
-  BarChart3,
-  Code,
-  Monitor
-} from "lucide-react";
-
-const skillCategories = [
-  {
-    title: "Creative Skills",
-    icon: Palette,
-    skills: [
-      "Art Direction",
-      "Brand Identity", 
-      "Concept Development",
-      "Typography",
-      "Visual Communications"
-    ]
-  },
-  {
-    title: "Leadership & Strategy",
-    icon: Target,
-    skills: [
-      "Team Leadership",
-      "Project Management",
-      "Presentation Design",
-      "Social Media Marketing"
-    ]
-  },
-  {
-    title: "Specialized Expertise", 
-    icon: Lightbulb,
-    skills: [
-      "Tradeshow & Environmental",
-      "Campaign Development",
-      "Brand Guidelines",
-      "Creative Workflows"
-    ]
-  }
-];
-
-const tools = [
-  "Adobe Creative Suite",
-  "Adobe After Effects", 
-  "Adobe Firefly",
-  "Adobe Illustrator",
-  "Adobe InDesign",
-  "Adobe Photoshop",
-  "Figma",
-  "Webflow",
-  "Midjourney",
-  "ChatGPT",
-  "Asana",
-  "Lovable"
-];
-
+import { Palette, Target, Users, Presentation, Lightbulb, BarChart3, Code, Monitor } from "lucide-react";
+const skillCategories = [{
+  title: "Creative Skills",
+  icon: Palette,
+  skills: ["Art Direction", "Brand Identity", "Concept Development", "Typography", "Visual Communications"]
+}, {
+  title: "Leadership & Strategy",
+  icon: Target,
+  skills: ["Team Leadership", "Project Management", "Presentation Design", "Social Media Marketing"]
+}, {
+  title: "Specialized Expertise",
+  icon: Lightbulb,
+  skills: ["Tradeshow & Environmental", "Campaign Development", "Brand Guidelines", "Creative Workflows"]
+}];
+const tools = ["Adobe Creative Suite", "Adobe After Effects", "Adobe Firefly", "Adobe Illustrator", "Adobe InDesign", "Adobe Photoshop", "Figma", "Webflow", "Midjourney", "ChatGPT", "Asana", "Lovable"];
 export const Skills = () => {
-  return (
-    <section className="py-20 bg-muted/30">
+  return <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Core Competencies</h2>
@@ -73,35 +27,25 @@ export const Skills = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {skillCategories.map((category, index) => {
-            const IconComponent = category.icon;
-            return (
-              <Card 
-                key={category.title} 
-                className="shadow-card hover:shadow-elegant transition-smooth card-gradient border-border/50"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+          const IconComponent = category.icon;
+          return <Card key={category.title} className="shadow-card hover:shadow-elegant transition-smooth card-gradient border-border/50" style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
                 <CardHeader className="text-center">
                   <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-2xl flex items-center justify-center">
                     <IconComponent className="w-8 h-8 text-primary" />
                   </div>
-                  <CardTitle className="text-xl font-semibold">{category.title}</CardTitle>
+                  <CardTitle className="font-semibold text-3xl">{category.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill) => (
-                      <Badge 
-                        key={skill} 
-                        variant="secondary" 
-                        className="text-sm bg-primary/5 text-primary border-primary/20"
-                      >
+                    {category.skills.map(skill => <Badge key={skill} variant="secondary" className="text-sm bg-primary/5 text-primary border-primary/20">
                         {skill}
-                      </Badge>
-                    ))}
+                      </Badge>)}
                   </div>
                 </CardContent>
-              </Card>
-            );
-          })}
+              </Card>;
+        })}
         </div>
 
         {/* Tools Section */}
@@ -115,19 +59,12 @@ export const Skills = () => {
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-3 justify-center">
-              {tools.map((tool) => (
-                <Badge 
-                  key={tool} 
-                  variant="outline" 
-                  className="text-sm py-2 px-4 bg-accent/5 text-accent border-accent/30 hover:bg-accent/10 transition-smooth"
-                >
+              {tools.map(tool => <Badge key={tool} variant="outline" className="text-sm py-2 px-4 bg-accent/5 text-accent border-accent/30 hover:bg-accent/10 transition-smooth">
                   {tool}
-                </Badge>
-              ))}
+                </Badge>)}
             </div>
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
