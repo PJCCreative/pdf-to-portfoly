@@ -46,10 +46,7 @@ export const Hero = () => {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed max-w-3xl mx-auto py-[10px]">
-              Hands-on Art Director with 10+ years of experience across digital, print, and environmental design. 
-              Proven success in driving engagement and measurable results.
-            </p>
+            <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed max-w-3xl mx-auto py-[10px]">Hands-on Art Director with 10+ years of experience across digital, print, and environmental design. Proven success in driving engagement and measurable results!!!!!!!</p>
             
             <div className="flex flex-wrap gap-4 justify-center mb-8 text-blue-100">
               <div className="flex items-center gap-2">
