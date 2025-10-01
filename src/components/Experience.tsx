@@ -97,12 +97,11 @@ export const Experience = () => {
               <CardHeader>
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                   <div className="flex-1">
-                    <CardTitle className="text-2xl mb-2 text-foreground flex items-center gap-2">
-                      <Building className="w-5 h-5 text-primary" />
+                    <CardTitle className="text-2xl mb-2 text-foreground">
                       {exp.company}
                     </CardTitle>
                     <div className="flex flex-wrap gap-4 text-muted-foreground mb-3">
-                      <span className="font-semibold text-primary text-lg">{exp.role}</span>
+                      <span className="font-semibold text-muted-foreground text-lg">{exp.role}</span>
                       <div className="flex items-center gap-1">
                         <MapPin className="w-4 h-4" />
                         <span>{exp.location}</span>
