@@ -21,8 +21,8 @@ export const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Calculate scale based on scroll position (1 to 1.2 scale)
-  const scale = 1 + scrollY / window.innerHeight * 0.2;
+  // Calculate scale based on scroll position (bolder intensity)
+  const scale = 1 + scrollY / window.innerHeight * 0.6;
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background SVG art with scroll scale effect */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-100 ease-out" style={{
