@@ -38,7 +38,7 @@ export const Skills = () => {
                   <CardTitle className="font-semibold text-3xl">{category.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
                     {category.skills.map(skill => <Badge key={skill} variant="outline" className="text-sm py-2 px-4 bg-accent/5 text-accent border-accent/30 hover:bg-accent/10 transition-smooth">
                         {skill}
                       </Badge>)}
