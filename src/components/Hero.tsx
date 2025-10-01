@@ -35,7 +35,7 @@ export const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
           <div className="animate-fade-in">
-            <Badge variant="secondary" className="mb-6 glass-effect border-white/20 text-white">
+            <Badge variant="secondary" className="mb-6 glass-effect border-white/20 text-muted-foreground">
               Senior Art Director
             </Badge>
             
