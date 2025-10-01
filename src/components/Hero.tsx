@@ -41,9 +41,7 @@ export const Hero = () => {
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
               Patrick
-              <span className="block bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent py-[4px]">
-                Campagnone Edit in Cursor
-              </span>
+              <span className="block bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent py-[4px]">Campagnone</span>
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed max-w-3xl mx-auto py-[10px]">Hands-on Art Director with 10+ years of experience across digital, print, and environmental design. Proven success in driving engagement and measurable results!!!</p>
