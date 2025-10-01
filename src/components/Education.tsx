@@ -63,31 +63,7 @@ export const Education = () => {
             </CardContent>
           </Card>
         </div>
-
-        {/* Additional Experience Summary */}
-        <div className="max-w-4xl mx-auto mt-12">
-          <Card className="shadow-card card-gradient border-border/50">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold text-center mb-6 text-foreground">
-                Additional Professional Experience
-              </h3>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <h4 className="font-semibold text-muted-foreground mb-2">Art Director</h4>
-                  <p className="text-sm text-muted-foreground">Led cross-functional teams for quarterly consumer product catalogs and direct mail campaigns</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-muted-foreground mb-2">Senior Graphic Designer</h4>
-                  <p className="text-sm text-muted-foreground">Managed production artists and illustrators for major clients including Clairol, US West, and CVS</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-muted-foreground mb-2">Creative Production</h4>
-                  <p className="text-sm text-muted-foreground">Oversaw photo shoots and press checks to ensure flawless execution from concept to final production</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+      
       </div>
     </section>
   );
