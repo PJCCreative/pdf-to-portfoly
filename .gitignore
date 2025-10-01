@@ -1,3 +1,19 @@
+# Ignore large installer packages and distribution artifacts
+*.pkg
+node-*.pkg/
+npm-*.pkg/
+Distribution/
+Resources/
+
+# Node / toolchain
+node_modules/
+*.log
+*.lock
+bun.lockb
+
+# Build outputs
+dist/
+.vite/
 # Logs
 logs
 *.log
