@@ -16,7 +16,7 @@ const skillCategories = [{
 }];
 const tools = ["Adobe Creative Suite", "Adobe After Effects", "Adobe Firefly", "Adobe Illustrator", "Adobe InDesign", "Adobe Photoshop", "Figma", "Webflow", "Midjourney", "ChatGPT", "Asana", "Lovable"];
 export const Skills = () => {
-  return <section className="py-20 bg-muted/30">
+  return <section className="py-20 bg-muted/40">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Core Competencies</h2>
