@@ -7,6 +7,7 @@ import {
   Linkedin,
   Globe
 } from "lucide-react";
+import { CONTACT_INFO } from "@/constants/contact";
 
 export const Footer = () => {
   return (
@@ -29,26 +30,26 @@ export const Footer = () => {
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-primary-foreground/80" />
               <a 
-                href="mailto:hello@pjccreative.com"
+                href={`mailto:${CONTACT_INFO.email}`}
                 className="hover:text-primary-foreground/80 transition-smooth"
               >
-                hello@pjccreative.com
+                {CONTACT_INFO.email}
               </a>
             </div>
             
             <div className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-primary-foreground/80" />
               <a 
-                href="tel:978-303-7936"
+                href={`tel:${CONTACT_INFO.phone}`}
                 className="hover:text-primary-foreground/80 transition-smooth"
               >
-                978-303-7936
+                {CONTACT_INFO.phone}
               </a>
             </div>
             
             <div className="flex items-center gap-3">
               <MapPin className="w-5 h-5 text-primary-foreground/80" />
-              <span>Townsend, MA 01469</span>
+              <span>{CONTACT_INFO.location}</span>
             </div>
           </div>
 
@@ -91,7 +92,7 @@ export const Footer = () => {
                 className="w-full justify-start"
                 asChild
               >
-                <a href="mailto:hello@pjccreative.com">
+                <a href={`mailto:${CONTACT_INFO.email}`}>
                   <Mail className="w-4 h-4 mr-2" />
                   Send Email
                 </a>

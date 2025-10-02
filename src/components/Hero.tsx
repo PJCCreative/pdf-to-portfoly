@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Mail, Phone, ExternalLink } from "lucide-react";
 import heroBackground from "@/assets/home-hero-blend.svg";
 import { useState, useEffect, useRef } from "react";
+import { CONTACT_INFO } from "@/constants/contact";
 export const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
   const tickingRef = useRef(false);
@@ -56,15 +57,15 @@ export const Hero = () => {
             <div className="flex flex-wrap gap-4 justify-center mb-8 text-blue-100">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>Townsend, MA</span>
+                <span>{CONTACT_INFO.location}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>978-303-7936</span>
+                <span>{CONTACT_INFO.phone}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>hello@pjccreative.com</span>
+                <span>{CONTACT_INFO.email}</span>
               </div>
             </div>
             
